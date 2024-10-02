@@ -1,0 +1,22 @@
+2024-10-02 20:28:45,809 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2024-10-02 20:28:46,901 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2024-10-02 20:28:47,059 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2024-10-02 20:28:47,733 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1727881127057&signature=32abe35c0b462f52e746d4aef553e3d416fb2478a54c7c254550e95b1fa1a6bf HTTP/1.1" 401 46
+2024-10-02 20:28:47,733 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2024-10-02 20:28:47,736 INFO :: Binance Futures Client successfully initialized
+2024-10-02 20:28:47,740 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2024-10-02 20:28:48,641 INFO :: Websocket connected
+2024-10-02 20:28:48,641 INFO :: Binance connection opened
+2024-10-02 20:28:48,642 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2024-10-02 20:28:49,534 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 401 81
+2024-10-02 20:28:49,536 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing authorization headers: api-key', 'name': 'HTTPError'}} (error code 401)
+2024-10-02 20:28:49,541 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2024-10-02 20:28:50,855 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 401 81
+2024-10-02 20:28:50,856 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing authorization headers: api-key', 'name': 'HTTPError'}} (error code 401)
+2024-10-02 20:28:50,860 INFO :: Bitmex Client successfully initialized
+2024-10-02 20:28:52,903 INFO :: Websocket connected
+2024-10-02 20:28:52,903 INFO :: Bitmex connection opened
+2024-10-02 20:42:35,782 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x000002082EF76930>>: BinanceClient._on_close() takes 2 positional arguments but 4 were given
+2024-10-02 20:42:35,788 ERROR :: Binance connection error: BinanceClient._on_close() takes 2 positional arguments but 4 were given
+2024-10-02 20:42:35,967 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x000002082F545070>>: BitmexClient._on_close() takes 2 positional arguments but 4 were given
+2024-10-02 20:42:35,967 ERROR :: Bitmex connection error: BitmexClient._on_close() takes 2 positional arguments but 4 were given
